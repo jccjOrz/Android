@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 添加头像ImageView -->
+    <ImageView
+        android:id="@+id/avatarImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="50dp" />
+
+    <!-- 添加姓名TextView -->
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓名"
+        android:layout_below="@id/avatarImage"
+        android:layout_alignStart="@id/avatarImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- 添加所属单位TextView -->
+    <TextView
+        android:id="@+id/companyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="所属单位"
+        android:layout_below="@id/avatarImage"
+        android:layout_alignEnd="@id/avatarImage"
+        android:layout_toEndOf="@id/nameText"
+        android:layout_centerHorizontal="true"
+        android:gravity="right"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- 添加标题TextView -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标题"
+        android:layout_below="@id/companyText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="截止日期"
+        android:layout_below="@id/companyText"
+        android:layout_marginLeft="30dp"
+        android:layout_toEndOf="@id/nameText"
+
+        android:layout_marginTop="30dp" />
+    <!-- 添加具体内容TextView -->
+    <TextView
+        android:id="@+id/contentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="具体内容"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:layout_below="@id/titleText"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="40dp"
+        android:textSize="15sp"
+        android:layout_marginTop="50dp" />
+
+    <!-- 添加第一个Button -->
+    <Button
+        android:id="@+id/firstButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已完成"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="120dp" />
+
+    <!-- 添加第二个Button -->
+    <Button
+        android:id="@+id/secondButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="120dp" />
+
+</RelativeLayout>

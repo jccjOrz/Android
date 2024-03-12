@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/lapsed_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="已过期的任务"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#696969">
+
+    </View>
+    <TextView
+        android:id="@+id/lapsed"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    </TextView>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/user_lapsed_viewpager"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1.5">
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SaveTheDate</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- 在strings.xml文件中定义带有下划线的字符串资源 -->
+    <string name="your_text_reference">This is an <u>underlined text</u>.</string>
+
+</resources>

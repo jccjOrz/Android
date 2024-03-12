@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/firstpic"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/firstpic"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SaveTheDate"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31" >
+
+        <activity
+            android:name=".Activity.FlashActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.FirstActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".Activity.StdMainActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".Activity.Shejiao_Class_Activity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".Activity.Shejiao_Room_Activity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".Activity.Shejiao_School_Activity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".Activity.Item_Mark_Activity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".Activity.PublishActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".Activity.Item_Mark_D_Activity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".Activity.Item_Mark_F_Activity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".Activity.Item_Mark_FD_Activity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".Activity.Item_Mark_P_D_Activity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".Activity.Item_Mark_P_O_Activity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".Activity.User_Unfinish_Activity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".Activity.User_Finish_Activity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".Activity.User_Lapsed_Activity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imageView"-->
+        <!--            android:layout_width="50dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentLeft="true"-->
+        <!--            android:layout_alignParentTop="true"-->
+        <!--            android:layout_marginStart="5dp"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:layout_marginEnd="5dp"-->
+        <!--            android:layout_marginBottom="5dp"-->
+        <!--            app:srcCompat="@drawable/shejiao" />-->
+        <TextView
+            android:id="@+id/tv_shejiao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="发布任务"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_weight="5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:textSize="20sp"
+            android:text="标  题:       "/>
+        <EditText
+            android:id="@+id/publish_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:textSize="25sp"
+            android:text="今天好好学习"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/publish_content"
+                    android:layout_marginTop="40sp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginRight="50sp"
+                    android:gravity="top"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:text="完成作业">
+
+                </EditText>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/edge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <Button
+                android:id="@+id/SendToRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送至宿舍"
+                android:layout_below="@+id/time"
+
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="55dp"
+                android:textSize="15sp"/>
+            <Button
+                android:id="@+id/SendToClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/time"
+                android:text="发送至班级"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@+id/SendToRoom"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/SendToSchool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送至学校"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/time"
+                android:layout_toEndOf="@+id/SendToClass"
+                android:textSize="15sp"/>
+
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请设置截止时间(选填)"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                />
+            <EditText
+                android:id="@+id/datatime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxxx-xx-xx"
+
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/time"
+                android:layout_alignBottom="@+id/time"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

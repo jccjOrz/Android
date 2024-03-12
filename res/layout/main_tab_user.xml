@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+
+        <TextView
+            android:id="@+id/tv_shejiao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="个人中心"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#696969">
+
+        </View>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/unfinished"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="unfinished">
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="10dp"
+                    app:srcCompat="@drawable/room"/>
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imageView3"
+                    android:layout_toRightOf="@+id/imageView3"
+                    android:textSize="20sp"
+                    android:text="未完成的任务"/>
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+            </View>
+            <RelativeLayout
+                android:id="@+id/finished"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="finished">
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="10dp"
+                    app:srcCompat="@drawable/room"/>
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imageView13"
+                    android:layout_toRightOf="@+id/imageView13"
+                    android:gravity="center"
+                    android:text="已经完成的任务"
+                    android:textSize="20sp"/>
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+            </View>
+            <RelativeLayout
+                android:id="@+id/lapsed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="lapsed">
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="10dp"
+                    app:srcCompat="@drawable/room"/>
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imageView23"
+                    android:layout_toRightOf="@+id/imageView23"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="已经过期的任务"/>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/out"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="70dp"
+                android:onClick="out"
+                android:src="@drawable/out" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

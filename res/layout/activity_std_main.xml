@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.StdMainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/act_main_viewpager"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1.5">
+
+    </androidx.viewpager.widget.ViewPager>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#696969">
+
+    </View>
+
+    <LinearLayout
+        android:id="@+id/act_main_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp">
+        <ImageView
+            android:id="@+id/main_image1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/shejiao"/>
+        <ImageView
+            android:id="@+id/main_image2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/add"/>
+        <ImageView
+            android:id="@+id/main_image3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/user"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
